@@ -1,0 +1,14 @@
+{
+    "one": { "sign_pos": [881,547] , "planet_pos":[815,155]},
+    "two": { "sign_pos":[433,232], "planet_pos":[381, 36] },
+    "three": { "sign_pos":[381,295], "planet_pos":[121, 175] },
+    "four": { "sign_pos":[816,589], "planet_pos":[425,487] },
+    "five": { "sign_pos":[361,893], "planet_pos":[79,795] },
+    "six": { "sign_pos":[429,947], "planet_pos":[385,1005] },
+    "seven": { "sign_pos":[875,632], "planet_pos":[833,767] },
+    "eight": { "sign_pos":[1325, 955], "planet_pos":[1315,1003] },
+    "nine": { "sign_pos":[1430,876], "planet_pos":[1629,765] },
+    "ten": { "sign_pos":[956,590], "planet_pos":[1251,439] },
+    "eleven": { "sign_pos":[1407,293], "planet_pos":[1623,179] },
+    "twelve": { "sign_pos":[1335,237], "planet_pos":[1273,41] }
+}
