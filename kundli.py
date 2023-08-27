@@ -1,7 +1,7 @@
 import os
 import json
 import datetime
-import GKundli
+from AstroKundli import GKundli
 from PIL import Image, ImageDraw, ImageFont
 
 name = input("Enter Name: ")
@@ -10,10 +10,9 @@ month = int(input("Month: "))
 day = int(input("Day: "))
 hour = int(input("Hour: "))
 minute = int(input("Minute: "))
-utc = input("UTC: ")
+utc = input("UTC: ").strip("+")
 latitude = float(input("Latitude: "))
 longitude = float(input("Longitude: "))
-
 
 def write_to_image(kundli, image_pos, kundli_img, output, mode):
     if mode == 0:
@@ -97,8 +96,8 @@ if __name__ == "__main__":
     image_pos = None
     with open("img_pos.json", "r") as opn:
         image_pos = json.load(opn)
-    kundli = GKundli.GKundli(year, month, day, hour, minute, utc, latitude, longitude).Bkundli()
-    transit = GKundli.GKundli(year, month, day, hour, minute, utc, latitude, longitude).transit_kundli(kundli)
+    kundli = GKundli.GKundli(year, month, day, hour, minute, utc, latitude, longitude).lagnaChart()
+    transit = GKundli.GKundli(year, month, day, hour, minute, utc, latitude, longitude).transitChart(kundli)
     write_to_image(kundli, image_pos, "Kundli-Design.png", output, 0)
     write_to_image(transit, image_pos, "Kundli-Design.png", output, 1)
     write_to_file(output+"/"+name+"-"+time+"/"+time+".txt", kundli, 0)
