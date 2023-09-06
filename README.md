@@ -1,5 +1,4 @@
 # KundliSidereal   
-Generate Kundi   
 This script generates Kundli.         
 
 # Images   
