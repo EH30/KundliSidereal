@@ -4,15 +4,15 @@ import datetime
 from AstroKundli import GKundli
 from PIL import Image, ImageDraw, ImageFont
 
-name = input("Enter Name: ")
+name = input("Enter Name: ").strip()
 year = int(input("Year: "))
 month = int(input("Month: "))
 day = int(input("Day: "))
 hour = int(input("Hour: "))
 minute = int(input("Minute: "))
 utc = input("UTC: ").strip("+")
-latitude = float(input("Latitude: "))
-longitude = float(input("Longitude: "))
+latitude = float(input("Latitude: ").strip("E N °"))
+longitude = float(input("Longitude: ").strip("E N °"))
 
 navamasa_mfd = {
             "move": [1,4,7,10],
